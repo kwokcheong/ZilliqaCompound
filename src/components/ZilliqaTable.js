@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Table from 'react-bootstrap/Table'
 
 const ZilliqaTable = ({ tableData, headingColumns, title, breakOn = 'medium' }) => {
     let tableClass = 'table-container__table'
@@ -34,7 +35,7 @@ const ZilliqaTable = ({ tableData, headingColumns, title, breakOn = 'medium' }) 
             <div className="table-container__title">
                 <h2>{title}</h2>
             </div>
-            <table className={tableClass}>
+            <Table striped bordered hover variant="light" className={tableClass}>
                 <thead>
                     <tr>
                         {headingColumns.map((col,index) => (
@@ -45,7 +46,7 @@ const ZilliqaTable = ({ tableData, headingColumns, title, breakOn = 'medium' }) 
                 <tbody>
                     {data}
                 </tbody>
-            </table>
+            </Table>
         </div>
     );
 }
