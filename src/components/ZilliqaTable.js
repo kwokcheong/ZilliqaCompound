@@ -35,7 +35,7 @@ const ZilliqaTable = ({ tableData, headingColumns, title, breakOn = 'medium' }) 
             <div className="table-container__title">
                 <h2>{title}</h2>
             </div>
-            <Table striped bordered hover variant="light" className={tableClass}>
+            <Table striped bordered variant="dark" className={tableClass}>
                 <thead>
                     <tr>
                         {headingColumns.map((col,index) => (
