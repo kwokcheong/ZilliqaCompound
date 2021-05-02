@@ -33,7 +33,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header title="Zilliqa Compound Calculator"/>
+        <Header title="Zilliqa Compound Calculator v2"/>
         <ZilliqaCompound/>
       </div>
     );
