@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ZilliqaRecord from './ZilliqaRecord';
+import Form from 'react-bootstrap/Form'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 class ZilliqaCompound extends Component {
@@ -45,7 +48,7 @@ class ZilliqaCompound extends Component {
     }
 
     zilliqaPerMonth = (zilPerWeek) => {
-        return (zilPerWeek * 30).toFixed(2);
+        return (zilPerWeek * 4).toFixed(2);
     }
 
     zilliqaCompoundWeekly = (capital, weeks, apy) => {
@@ -88,25 +91,37 @@ class ZilliqaCompound extends Component {
     }
 
     render(){
-        // const bulletedRecords = this.state.results.compoundWeekly.map((e,i) => {
-        //     return(
-        //         <SingleZilliqaRecord item={e.toFixed(2)} index={i}/>
-        //     )
-        // })
         return(
             <div>
-                <form onSubmit={this.compileForm}>
-                Total Zil: 
-                <input type='text' placeholder="Enter initial capital" value={this.state.capital} onChange={this.handleCapital}/>
-                Weeks
-                <input type='text' placeholder="Enter Weeks" value={this.state.weeks} onChange={this.handleWeeks}/>
-                APY
-                <input type='text' placeholder="Enter APY" value={this.state.apy} onChange={this.handleApy}/>
-                <Button type="submit">Calculate</Button>
-                <Button variant='danger' onClick={this.clearList}>Clear List</Button>
-                </form>
+                <Form onSubmit={this.compileForm}>
+                    <Row>
+                        <Col>
+                            <Form.Label>Total Amount of Zil</Form.Label>
+                            <Form.Control type='text' placeholder="Enter initial capital" value={this.state.capital} onChange={this.handleCapital}/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Form.Label>No of Weeks</Form.Label>
+                            <Form.Control type='text' placeholder="Enter Weeks" value={this.state.weeks} onChange={this.handleWeeks}/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Form.Label>APY</Form.Label>                        
+                            <Form.Control type='text' placeholder="Enter APY" value={this.state.apy} onChange={this.handleApy}/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Button type="submit">Calculate</Button>
+                            <Button variant='danger' onClick={this.clearList}>Clear List</Button>
+                        </Col>
+                    </Row>
+                </Form>
+                
 
-                { this.state.results.compoundWeekly.length === 0? "no values yet" : <ZilliqaRecord item={this.state.results}/>}
+                { this.state.results.compoundWeekly.length === 0? "" : <ZilliqaRecord item={this.state.results}/>}
             </div>
         )
     }
