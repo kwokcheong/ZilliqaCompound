@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ZilliqaCompound/static/css/main.47dfdc96.chunk.css",
+    "main.css": "/ZilliqaCompound/static/css/main.e1a11223.chunk.css",
     "main.js": "/ZilliqaCompound/static/js/main.985cc12c.chunk.js",
     "main.js.map": "/ZilliqaCompound/static/js/main.985cc12c.chunk.js.map",
     "runtime-main.js": "/ZilliqaCompound/static/js/runtime-main.b9301e64.js",
@@ -12,14 +12,14 @@
     "static/js/3.d60b2c74.chunk.js.map": "/ZilliqaCompound/static/js/3.d60b2c74.chunk.js.map",
     "index.html": "/ZilliqaCompound/index.html",
     "static/css/2.5c573378.chunk.css.map": "/ZilliqaCompound/static/css/2.5c573378.chunk.css.map",
-    "static/css/main.47dfdc96.chunk.css.map": "/ZilliqaCompound/static/css/main.47dfdc96.chunk.css.map",
+    "static/css/main.e1a11223.chunk.css.map": "/ZilliqaCompound/static/css/main.e1a11223.chunk.css.map",
     "static/js/2.01dfbd28.chunk.js.LICENSE.txt": "/ZilliqaCompound/static/js/2.01dfbd28.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b9301e64.js",
     "static/css/2.5c573378.chunk.css",
     "static/js/2.01dfbd28.chunk.js",
-    "static/css/main.47dfdc96.chunk.css",
+    "static/css/main.e1a11223.chunk.css",
     "static/js/main.985cc12c.chunk.js"
   ]
 }
