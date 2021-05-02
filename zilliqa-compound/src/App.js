@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { Component } from 'react';
 import Header from './components/Header';
 import SingleTodo from './SingleTodo';
@@ -14,12 +13,6 @@ class App extends Component {
       todos: [],
       currentTodo: ""
     };
-  }
-
-  //e is taking in an event
-  onInputChange = e => {
-    //currentTodo becomes e.target.value
-    this.setState({ currentTodo: e.target.value })
   }
 
   onClick = () => {
@@ -38,13 +31,9 @@ class App extends Component {
   }
 
   render() {
-    let bulletedTodos = this.state.todos.map((e, i) => {
-      return(
-        <SingleTodo todo={e} delete={() => this.deleteTodo(i) } />
-      )
-    });
     return (
       <div>
+        <Header title="Zilliqa Compound Calculator"/>
         <ZilliqaCompound/>
       </div>
     );

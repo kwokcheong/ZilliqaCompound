@@ -1,11 +1,11 @@
 import React from 'react'
+import { propTypes } from 'react-bootstrap/esm/Image'
 
-const Header = () => {
+const Header = ({ title }) => {
     return (
-        <div>
-            <h1>Zilliqa Compound Calculator</h1>
-        </div>
+        <header className="header">
+            <h1>{title}</h1>
+        </header>
     )
 }
-
-export default Header
+export default Header;
