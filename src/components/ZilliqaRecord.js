@@ -10,9 +10,6 @@ const ZilliqaRecord = props => {
         let serializedData =[];
         // to be in this format { week: , compounded: , zilperday: , zilperWeek, zilperMonth }
         for (let i=0; i<compoundWeekly.length; i++){
-            let cmp = compoundWeekly[i];
-            let zpd = zilPerDay[i];
-            let zpw = zilPerWeek[i];
             serializedData.push({  'week': `${parseInt(i)}`, 
                                    'compound': `${compoundWeekly[i]}`,
                                    'zilperDay': `${zilPerDay[i]}`, 
