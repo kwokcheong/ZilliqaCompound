@@ -1,0 +1,19 @@
+To do 
+
+[] -> Bring in the API component to fetch the current prices and allow for real time calculation on monthly profits
+
+[] -> Explore the use of bootstrap table instead
+
+[] -> Css the table to prevent the need to zoom out on zil table
+
+[] -> Bring in Graph Component to show the increase in zil coins
+
+[] -> Add in calculation for Gzil earnings
+
+[] -> Give option to choose daily/ weekly/ monthly draw
+
+[] -> Give option to edit moonlet/atomic fees for withdrawal
+
+[] -> add in depreciating zil APY
+
+[] -> create pagination for table so that there will be space for the graph 

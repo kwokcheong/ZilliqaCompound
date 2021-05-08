@@ -114,8 +114,8 @@ class ZilliqaCompound extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <Button type="submit">Calculate</Button>
-                            <Button variant='danger' onClick={this.clearList}>Clear List</Button>
+                            <Button variant='info' type="submit">Calculate</Button>
+                            <Button variant='secondary' onClick={this.clearList}>Clear List</Button>
                         </Col>
                     </Row>
                 </Form>
