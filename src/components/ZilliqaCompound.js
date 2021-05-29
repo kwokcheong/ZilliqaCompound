@@ -44,7 +44,7 @@ class ZilliqaCompound extends Component {
     }
 
     zilliqaPerWeek = (zilPerDay) => {
-        return (zilPerDay * 14).toFixed(2);
+        return (zilPerDay * 7).toFixed(2);
     }
 
     zilliqaPerMonth = (zilPerWeek) => {
